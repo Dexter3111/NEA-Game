@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - AttackingTeam
   - Feet
+  - coin
+  - heart
   layers:
   - Default
   - TransparentFX
