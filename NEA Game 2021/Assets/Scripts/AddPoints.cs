@@ -7,7 +7,7 @@ using TMPro;
 public class AddPoints : MonoBehaviour {
 
 	public int score;
-	public TextMeshPro scoreText;
+	public TextMeshProUGUI scoreText;
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +29,7 @@ public class AddPoints : MonoBehaviour {
 		if (collision.gameObject.tag == "heart") {
 			//Debug.Log ("Heart");
 			Destroy (collision.gameObject);
+
 
 			//code it so it gives full health when picked up
 		}

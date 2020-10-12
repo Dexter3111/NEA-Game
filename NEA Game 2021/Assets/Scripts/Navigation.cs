@@ -4,11 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Navigation : MonoBehaviour {
-	
+
+	private Canvas mainCanvas;
+	private Canvas difficultCanvas;
+
 	//Start Button
 	public void ClickedButtonStart(){
-		//Debug.Log ("Start Game Button Clicked");
-		SceneManager.LoadScene(2);
+		Debug.Log ("Start Game Button Clicked");
+		mainCanvas.enabled = false;
+		difficultCanvas.enabled = true;
+
 	}
 	//Tutorial Button
 	public void ClickedButtonTutorial(){
@@ -28,6 +33,10 @@ public class Navigation : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		mainCanvas = GameObject.FindGameObjectWithTag("mainCanvas");
+		mainCanvas.enabled = true ;
+		difficultCanvas = GameObject.FindGameObjectWithTag ("difficultCanvas");
+		difficultCanvas.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -36,6 +45,7 @@ public class Navigation : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Escape)){
 			SceneManager.LoadScene(0);
 		}
+
 
 	}
 }

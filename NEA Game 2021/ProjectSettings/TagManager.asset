@@ -10,6 +10,7 @@ TagManager:
   - coin
   - heart
   - chest
+  - mainCanvas
   layers:
   - Default
   - TransparentFX
