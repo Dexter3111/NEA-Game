@@ -9,6 +9,7 @@ TagManager:
   - Feet
   - coin
   - heart
+  - chest
   layers:
   - Default
   - TransparentFX

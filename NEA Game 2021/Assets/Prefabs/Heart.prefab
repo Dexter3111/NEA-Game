@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1760127876884262}
+  m_RootGameObject: {fileID: 1047659978641732}
   m_IsPrefabAsset: 1
---- !u!1 &1760127876884262
+--- !u!1 &1047659978641732
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4327270297808898}
-  - component: {fileID: 212340126900224454}
-  - component: {fileID: 61552391056671176}
+  - component: {fileID: 4084070575422890}
+  - component: {fileID: 212379292539853072}
+  - component: {fileID: 61010117671227088}
   m_Layer: 0
   m_Name: Heart
   m_TagString: heart
@@ -28,25 +28,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4327270297808898
+--- !u!4 &4084070575422890
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1760127876884262}
+  m_GameObject: {fileID: 1047659978641732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7839527, y: 3.834198, z: -10.620612}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61552391056671176
+--- !u!61 &61010117671227088
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1760127876884262}
+  m_GameObject: {fileID: 1047659978641732}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -66,12 +66,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11, y: 0.09}
   m_EdgeRadius: 0
---- !u!212 &212340126900224454
+--- !u!212 &212379292539853072
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1760127876884262}
+  m_GameObject: {fileID: 1047659978641732}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
