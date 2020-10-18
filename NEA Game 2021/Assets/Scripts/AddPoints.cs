@@ -21,8 +21,8 @@ public class AddPoints : MonoBehaviour {
 		if (collision.gameObject.tag == "coin") {
 			//Debug.Log ("Coin");
 			Destroy (collision.gameObject);
-			score += 5;
-			scoreText.text = "Score: " + score.ToString();
+			score += 1;
+			scoreText.text = "Coins Collected: " + score.ToString();
 		}
 
 		//heart collectible
@@ -39,7 +39,7 @@ public class AddPoints : MonoBehaviour {
 			//Debug.Log ("chest");
 
 			//if all coins collected then proceed to win.
-			if (score == 50){
+			if (score == 10){
 				SceneManager.LoadScene(4);
 				Destroy (collision.gameObject);
 				//Debug.Log ("WIN");
