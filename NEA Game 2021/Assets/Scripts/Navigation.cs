@@ -13,13 +13,17 @@ using UnityEngine.SceneManagement;
 public class Navigation : MonoBehaviour {
 
 	private Canvas mainCanvas;
-	private Canvas difficultCanvas;
+	private GameObject main;
+	private GameObject difficult;
+	private GameObject controls;
 
 	//Start Button
 	public void ClickedButtonStart(){
-		Debug.Log ("Start Game Button Clicked");
-		mainCanvas.enabled = false;
-		//difficultCanvas.enabled = true;
+		//Setting the main menu false so the new difficulty menu shows instead.
+		main.SetActive(false);
+		difficult.SetActive(true);
+		controls.SetActive (false);
+		//Debug.Log ("Start Game Button Clicked");
 
 	}
 	//Tutorial Button
@@ -30,20 +34,42 @@ public class Navigation : MonoBehaviour {
 	//Controls Button
 	public void ClickedButtonControls(){
 		//Debug.Log("Controls Button Clicked");
-		SceneManager.LoadScene(3);
+		main.SetActive(false);
+		difficult.SetActive (false);
+		controls.SetActive (true);
 	}
 	//Main Menu Button
 	public void ClickedButtonMenu(){
 		//Debug.Log("Main Menu Button Clicked");
 		SceneManager.LoadScene(0);
 	}
+	//Easy
+	public void ClickedButtonEasy(){
+		SceneManager.LoadScene (2);
+	}
+	//Medium
+	public void ClickedButtonMedium(){
+		SceneManager.LoadScene (6);
+	}
+	//Hard
+	public void ClickedButtonHard(){
+		SceneManager.LoadScene (7);
+	}
 
 	// Use this for initialization
 	void Start () {
-		mainCanvas = Canvas. ("Canvas") ;
+		mainCanvas = GameObject.FindObjectOfType <Canvas> ();
 		mainCanvas.enabled = true ;
-		//difficultCanvas = GameObject.FindObjectOfType <Canvas> ();
-		//difficultCanvas.enabled = false;
+
+		main = GameObject.FindGameObjectWithTag ("main");
+		main.SetActive(true);
+
+		difficult = GameObject.FindGameObjectWithTag ("difficult");
+		difficult.SetActive(false);
+
+		controls = GameObject.FindGameObjectWithTag ("controls");
+		controls.SetActive (false);
+
 	}
 	
 	// Update is called once per frame

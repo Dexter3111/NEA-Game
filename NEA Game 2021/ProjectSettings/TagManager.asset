@@ -11,6 +11,10 @@ TagManager:
   - heart
   - chest
   - mainCanvas
+  - scoreCanvas
+  - difficult
+  - main
+  - controls
   layers:
   - Default
   - TransparentFX
