@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -423,11 +423,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4520672199149850, guid: 30da84097b09b2d458ce73f08fcdc83a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.66
+      value: -4.673
       objectReference: {fileID: 0}
     - target: {fileID: 4520672199149850, guid: 30da84097b09b2d458ce73f08fcdc83a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.52
+      value: -9.533
       objectReference: {fileID: 0}
     - target: {fileID: 4520672199149850, guid: 30da84097b09b2d458ce73f08fcdc83a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -457,6 +457,34 @@ Prefab:
         type: 2}
       propertyPath: scoreText
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520672199149850, guid: 30da84097b09b2d458ce73f08fcdc83a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520672199149850, guid: 30da84097b09b2d458ce73f08fcdc83a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61699692246206788, guid: 30da84097b09b2d458ce73f08fcdc83a,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.12018323
+      objectReference: {fileID: 0}
+    - target: {fileID: 61699692246206788, guid: 30da84097b09b2d458ce73f08fcdc83a,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.78678465
+      objectReference: {fileID: 0}
+    - target: {fileID: 61699692246206788, guid: 30da84097b09b2d458ce73f08fcdc83a,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.035730362
+      objectReference: {fileID: 0}
+    - target: {fileID: 61699692246206788, guid: 30da84097b09b2d458ce73f08fcdc83a,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.5375919
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114418775860783792, guid: 30da84097b09b2d458ce73f08fcdc83a, type: 2}
@@ -7854,7 +7882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -288.5, y: 141.5}
+  m_AnchoredPosition: {x: -386, y: 196.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959981023
@@ -8014,7 +8042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288.5, y: 141.5}
+  m_AnchoredPosition: {x: 386, y: 196.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1039303430
@@ -8262,7 +8290,7 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 920ca770b2e75eb47b8233d6928ef8ca, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

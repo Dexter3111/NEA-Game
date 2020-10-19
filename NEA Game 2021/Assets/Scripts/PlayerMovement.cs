@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Created Session - 2 
+ * Edited Session - 2
+ * Purpose - Players movement script. This scipt is used to get the players input and move the sprite across the level.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
