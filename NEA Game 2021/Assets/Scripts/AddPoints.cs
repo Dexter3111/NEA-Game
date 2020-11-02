@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 2 
- * Edited Session - 3
+ * Edited Session - 6
  * Purpose - All collectibles which add score / remove score will be present in this script.
 */
 
@@ -46,7 +46,7 @@ public class AddPoints : MonoBehaviour {
 
 			//if all coins collected then proceed to win. If not all 10 collected then player cannot win yet.
 			if (score == 10){
-				SceneManager.LoadScene(4);
+				SceneManager.LoadScene(3);
 				Destroy (collision.gameObject);
 				//Debug.Log ("WIN");
 			}

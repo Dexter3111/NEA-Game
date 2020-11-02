@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 1
- * Edited Session - 4
+ * Edited Session - 6
  * Purpose - used to load the different canvas' on the screen on the main menu, allowing for the player to pick different options
              also allows the player to change scene throughout the menu and within the game.
 */
@@ -49,11 +49,11 @@ public class Navigation : MonoBehaviour {
 	}
 	//Medium
 	public void ClickedButtonMedium(){
-		SceneManager.LoadScene (6);
+		SceneManager.LoadScene (5);
 	}
 	//Hard
 	public void ClickedButtonHard(){
-		SceneManager.LoadScene (7);
+		SceneManager.LoadScene (6);
 	}
 
 	// Use this for initialization

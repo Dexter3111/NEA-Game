@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 3
- * Edited Session - 3
+ * Edited Session - 6
  * Purpose - To Check the health of the player at all times during the game and update the health if picked up 
              a collectible or is being attacked.
 */
@@ -41,7 +41,7 @@ public class CheckDeath : MonoBehaviour {
 
 		//Check if health == 0, if health == 0 display losing scene.
 		if (health == 0) {
-			SceneManager.LoadScene (5);
+			SceneManager.LoadScene (4);
 		}
 
 
