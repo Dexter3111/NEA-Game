@@ -17,6 +17,8 @@ TagManager:
   - controls
   - score
   - pause
+  - vase
+  - cube
   layers:
   - Default
   - TransparentFX
@@ -53,6 +55,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: spawn locations
+    uniqueID: 1875567949
     locked: 0
   - name: background
     uniqueID: 2518468197

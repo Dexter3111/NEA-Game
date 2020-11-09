@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 2 
- * Edited Session - 2
+ * Edited Session - 7
  * Purpose - Players movement script. This scipt is used to get the players input and move the sprite across the level.
 */
 
@@ -17,6 +17,15 @@ public class PlayerMovement : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 		rb.freezeRotation = true;
 	}
+	void OnCollisionEnter2D(Collision2D collision){
+
+		if (collision.gameObject.tag == "vase") {
+			Debug.Log ("Vase");
+			Destroy (collision.gameObject);
+		}
+	
+	}
+
 	
 	// Update is called once per frame
 	void Update () {
