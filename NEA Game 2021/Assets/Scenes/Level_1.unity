@@ -158,7 +158,7 @@ Prefab:
     - target: {fileID: 224473108528999650, guid: 91876d74ed32f58439c7879990177350,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224473108528999650, guid: 91876d74ed32f58439c7879990177350,
         type: 2}
@@ -443,6 +443,11 @@ Transform:
   m_Father: {fileID: 959058784}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &98928534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1989999184511494, guid: 91876d74ed32f58439c7879990177350,
+    type: 2}
+  m_PrefabInternal: {fileID: 47388442}
 --- !u!1 &157478856
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75238c97d467d3b4c8b192dad2826981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 0}
 --- !u!114 &157478858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +615,7 @@ Transform:
   - {fileID: 1923534955}
   - {fileID: 2130381640}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &454018152
 Prefab:
@@ -869,6 +875,7 @@ GameObject:
   - component: {fileID: 752669292}
   - component: {fileID: 752669291}
   - component: {fileID: 752669290}
+  - component: {fileID: 752669299}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1081,6 +1088,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &752669299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752669289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc114462846bcaf46bcd158d5d614d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1929119053219538, guid: 6788b4471b0d72149a994eb84b736ab0, type: 2}
+  pause: {fileID: 98928534}
 --- !u!1001 &804064925
 Prefab:
   m_ObjectHideFlags: 0

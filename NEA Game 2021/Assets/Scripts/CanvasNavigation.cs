@@ -13,7 +13,8 @@ public class CanvasNavigation : MonoBehaviour {
 
 	private Canvas gameCanvas;
 	private GameObject score;
-	private GameObject pause;
+	public GameObject pause;
+	private GameObject help;
 
 	// Use this for initialization
 	//Keep the score canvas enabled throughout the game so the player can see their score and health.
@@ -25,11 +26,12 @@ public class CanvasNavigation : MonoBehaviour {
 		score.SetActive(true);
 
 		pause = GameObject.FindGameObjectWithTag ("pause");
-		pause.SetActive (false);
+		pause.SetActive (false); 
 	}
 
 	public void ClickedButtonResume(){
 		pause.SetActive (false);
+		score.SetActive (true);
 	}
 
 	public void ClickedButtonTutorial(){
@@ -46,6 +48,8 @@ public class CanvasNavigation : MonoBehaviour {
 
 		if (Input.GetKey(KeyCode.Escape)){
 			pause.SetActive (true);
+			score.SetActive (false);
+
 		}
 
 	}
