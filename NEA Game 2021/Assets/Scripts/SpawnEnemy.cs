@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 7
- * Edited Session - 7
+ * Edited Session - 9
  * Purpose - This is used to locate spawning areas and spawn enemies inside of that area 
  if the raycast hits the area.
 */
@@ -13,7 +13,7 @@ public class SpawnEnemy : MonoBehaviour {
 
 
 	//use ray cast to some how identify the tile map
-	// then use that tile map to spawn in enemies? or use another script got no clue
+	// then use that tile map to spawn in enemies
 
 
 	// Use this for initialization
