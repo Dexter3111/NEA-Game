@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 3
- * Edited Session - 6
+ * Edited Session - 10
  * Purpose - To Check the health of the player at all times during the game and update the health if picked up 
              a collectible or is being attacked.
 */
@@ -30,11 +30,16 @@ public class CheckDeath : MonoBehaviour {
 			//Debug.Log ("add 25 health");
 			health += 25;
 			healthText.text = "Health: " + health.ToString ();
+		}
+
+		if (collision.gameObject.tag == "enemy") {
+			//Debug.Log ("minus 25 health");
+			health -= 25;
+			healthText.text = "Health: " + health.ToString ();
 
 		}
 	
 	}
-		
 
 	// Update is called once per frame
 	void Update () {

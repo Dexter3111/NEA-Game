@@ -21,6 +21,7 @@ TagManager:
   - cube
   - bullet
   - help
+  - enemy
   layers:
   - Default
   - TransparentFX
