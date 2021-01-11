@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 7
- * Edited Session - 10
+ * Edited Session - 12
  * Purpose - This is used to locate spawning areas and spawn enemies inside of that area 
  if the raycast hits the area.
 */
@@ -16,28 +16,32 @@ public class SpawnEnemy : MonoBehaviour {
 	// then use that tile map to spawn in enemies
 
 	public GameObject enemy;
-	private bool spawned = false;
-
+	public int count;
 
 	// Use this for initialization
 	void Start () {
-		
+		InvokeRepeating ("SpawnE", 5.0f, 1.0f);
+		count = 0;
 	}
 
 	//the method to allow enemies to instantiate/spawn at 0, 0 on the level.
 	void SpawnE(){
 		Instantiate (enemy, new Vector2(0, 0), Quaternion.identity);
-		spawned = true;
-		Debug.Log ("enemy spawned");
+		count = count + 1;
+		//Debug.Log ("enemy spawned");
 	}
 	
 	// Update is called once per frame
-	//Every 5 seconds more enemies should spawn.
+	//Set a limit to the amount of enemies spawned in total
 	void Update () {
 
-		if (spawned == false) {
-			Invoke ("SpawnE", 5);
+		if (count == 5){
+				
+				CancelInvoke();
+
+			}
+
+
 		}
 	
 	}
-}
