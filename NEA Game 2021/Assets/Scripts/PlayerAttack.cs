@@ -14,7 +14,7 @@ public class PlayerAttack : MonoBehaviour {
 	public GameObject bullet;
 
 	// Update is called once per frame
-	void Update () {
+	public void Update () {
 
 		if (Input.GetKeyDown (KeyCode.Q)) 	{
 			//Debug.Log ("shot");
@@ -22,12 +22,8 @@ public class PlayerAttack : MonoBehaviour {
 			Debug.Log (Input.mousePosition.y);
 			Debug.Log (Camera.main.ScreenToWorldPoint(Input.mousePosition)); 
 
-			float mouseposX = Input.mousePosition.x;
-			float mouseposY = Input.mousePosition.y;
-
-			//Vector3 mousepos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			//Instantiate (bullet, new Vector2(0, 0), Quaternion.identity);
-			Instantiate (bullet, new Vector3 (mouseposX,mouseposY, 0f), transform.rotation);
+			Vector2 mousepos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			Instantiate (bullet, new Vector3(mousepos.x, mousepos.y, 0f), Quaternion.identity);
 
 		
 		}
