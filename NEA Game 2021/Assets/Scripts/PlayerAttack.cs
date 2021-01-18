@@ -1,6 +1,6 @@
 ﻿/*
  * Created Session - 8
- * Edited Session - 10
+ * Edited Session - 13
  * Purpose - How the player shoots.
 */
 
@@ -12,6 +12,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour {
 
 	public GameObject bullet;
+	public GameObject player;
 
 	// Update is called once per frame
 	public void Update () {

@@ -744,6 +744,11 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114270281852899156, guid: 91876d74ed32f58439c7879990177350,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91876d74ed32f58439c7879990177350, type: 2}
   m_IsPrefabAsset: 0
